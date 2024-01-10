@@ -5,9 +5,8 @@ open class Menu(val title:String,val nameMenu:String,val arhive: Archive) {
     constructor(title: String, nameMenu:String, archive: Archive, archiv2: MutableList<Archive> = mutableListOf()): this (title, nameMenu, archive) {
     this.archiv2 = archiv2
     }
-
-    var n: Int = 0
     open fun menuList() {
+        var n: Int = 0
         println("\n++++ $title ${arhive.name} ++++\n")
         println("$n. Создать $nameMenu")
         println("${n + 1}. Выход")

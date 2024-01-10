@@ -8,7 +8,7 @@ class ArchiveList(val arhive: Archive, val scanner: Scanner) {
         menu.menuList()
 
             when (val input = scanner.nextLine()) {
-               "0" -> create()
+               "0" -> add()
                "1" -> return
                 else -> {
                    val inT = input.toIntOrNull()?.minus(2)
@@ -19,7 +19,7 @@ class ArchiveList(val arhive: Archive, val scanner: Scanner) {
 
                    }}}}}
 
-    fun create() {
+    fun add() {
         var title = ""
         while (title.isBlank()) {
             print("Введите название заметки: ")
