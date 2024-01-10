@@ -1,5 +1,4 @@
 import java.util.Scanner
-
 class MenuList(arhive: Archive) {
     val scanner: Scanner = Scanner(System.`in`)
     val arhiv2 = mutableListOf<Archive>()

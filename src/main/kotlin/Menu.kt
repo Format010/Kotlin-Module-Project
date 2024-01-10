@@ -23,5 +23,4 @@ open class Menu(val title:String,val nameMenu:String,val arhive: Archive) {
                 println("${index + 2}. ${archive.name}")
         }}
         print("\nВведите номер: ")
-    }
-}
+    }}
