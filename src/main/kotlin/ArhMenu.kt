@@ -1,4 +1,5 @@
 import java.util.Scanner
+
 class MenuList(arhive: Archive) {
     val scanner: Scanner = Scanner(System.`in`)
     val arhiv2 = mutableListOf<Archive>()
@@ -15,7 +16,10 @@ class MenuList(arhive: Archive) {
                     if (index != null && index in arhiv2.indices) {
                         ArchiveList(arhiv2[index], scanner).show()
                     } else println("Нет такого пункта в меню. Повторите ввод!")
-                }}}}
+                }
+            }
+        }
+    }
 
     fun add() {
         var name = ""
